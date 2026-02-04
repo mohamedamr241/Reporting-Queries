@@ -12,3 +12,70 @@ CASE
         WHEN EXTRACT(MONTH FROM CREATEDTIME) = 11 THEN 'November'
         WHEN EXTRACT(MONTH FROM CREATEDTIME) = 12 THEN 'December'
     END
+
+
+
+ 
+    CASE 
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 1 THEN 'Last 1 Hour'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 2 THEN 'Last 2 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 3 THEN 'Last 3 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 4 THEN 'Last 4 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 5 THEN 'Last 5 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 6 THEN 'Last 6 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 7 THEN 'Last 7 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 8 THEN 'Last 8 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 9 THEN 'Last 9 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 10 THEN 'Last 10 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 11 THEN 'Last 11 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 12 THEN 'Last 12 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 13 THEN 'Last 13 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 14 THEN 'Last 14 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 15 THEN 'Last 15 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 16 THEN 'Last 16 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 17 THEN 'Last 17 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 18 THEN 'Last 18 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 19 THEN 'Last 19 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 20 THEN 'Last 20 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 21 THEN 'Last 21 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 22 THEN 'Last 22 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 23 THEN 'Last 23 Hours'
+        WHEN extract(hour from current_timestamp - Firstoccurrencetime) <= 24 THEN 'Last 24 Hours'
+    END 
+
+
+
+
+CASE 
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 1 THEN 'Yesterday'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 2 THEN 'Last 2 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 3 THEN 'Last 3 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 4 THEN 'Last 4 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 5 THEN 'Last 5 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 6 THEN 'Last 6 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 7 THEN 'Last 7 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 8 THEN 'Last 8 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 9 THEN 'Last 9 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 10 THEN 'Last 10 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 11 THEN 'Last 11 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 12 THEN 'Last 12 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 13 THEN 'Last 13 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 14 THEN 'Last 14 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 15 THEN 'Last 15 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 16 THEN 'Last 16 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 17 THEN 'Last 17 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 18 THEN 'Last 18 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 19 THEN 'Last 19 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 20 THEN 'Last 20 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 21 THEN 'Last 21 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 22 THEN 'Last 22 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 23 THEN 'Last 23 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 24 THEN 'Last 24 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 25 THEN 'Last 25 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 26 THEN 'Last 26 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 27 THEN 'Last 27 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 28 THEN 'Last 28 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 29 THEN 'Last 29 Days'
+    WHEN extract(day from (current_timestamp - Firstoccurrencetime )) <= 30 THEN 'Last 30 Days'
+    ELSE '> 30 Days'
+END
